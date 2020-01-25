@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Каталог шаблонов Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/160x60" width="160" height="60 "alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <main>
+      <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+      <aside>
+
+        <form class="left-filter" action="filter.php" method="post">
+          <!-- Здесь будет добавлен дополнительный фильтр по стоимости -->
+          <h3>Сетка</h3>
+          <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
+          <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
+          <label><input type="radio" name="grid" value="elastic">Резиновая</label>
+          <h3>Особенности</h3>
+          <label><input type="checkbox" name="slider" value="slider">Слайдер</label>
+          <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
+          <label><input type="checkbox" name="news" value="news">Новости</label>
+          <label><input type="checkbox" name="gallery" value="gallery">Галерея</label>
+          <label><input type="checkbox" name="cart" value="cart">Корзина</label>
+          <input type="button" name="show" value="Показать">
+        </form>
+      </aside>
+      <section>
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <ul>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон Sedona"></a>
+            <h3><a href="#">Sedona</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <span><a href="#">9 900 руб.</a></span>
+          </li>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон Pink"></a>
+          </li>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон Borodinski"></a>
+          </li>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон Mishka"></a>
+          </li>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон A плюс"></a>
+          </li>
+          <li>
+            <a href="#"><img src="https://via.placeholder.com/360x575" width="360" hight="575" alt="Шаблон Кваст"></a>
+          </li>
+        </ul>
+        <!-- Здесь добавим пагинацию -->
+      </section>
+      <!-- Здесь добавим карту и контакты -->
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#" title="Студия в социальной сети Вконтакте">Вконтакте</a></li>
+        <li><a href="#" title="Студия в социальной сети Facebook">Facebook</a></li>
+        <li><a href="#"title="Студия в социальной сети Instagram">Instagram</a></li>
+      </ul>
+      <p class="text-large">Давайте дружить, это выгодно</p>
+      <p class="text-small">Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+  </body>
+</html>
