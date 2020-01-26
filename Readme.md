@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Хорев Кирилл](https://up.htmlacademy.ru/htmlcss/27/user/1315903).
-* Наставник: [Екатерина Мавлютова] (https://htmlacademy.ru/profile/aoyami).
+* Наставник: [Екатерина Мавлютова](https://htmlacademy.ru/profile/aoyami).
 
 ---
 
