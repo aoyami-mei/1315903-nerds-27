@@ -16,9 +16,7 @@
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+        <a href="#">Корзина</a>
       </nav>
     </header>
     <main>
@@ -26,17 +24,21 @@
       <aside>
         <form class="left-filter" action="filter.php" method="post">
           <!-- Здесь будет добавлен дополнительный фильтр по стоимости -->
-          <h3>Сетка</h3>
-          <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
-          <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
-          <label><input type="radio" name="grid" value="elastic">Резиновая</label>
-          <h3>Особенности</h3>
-          <label><input type="checkbox" name="slider" value="slider">Слайдер</label>
-          <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
-          <label><input type="checkbox" name="news" value="news">Новости</label>
-          <label><input type="checkbox" name="gallery" value="gallery">Галерея</label>
-          <label><input type="checkbox" name="cart" value="cart">Корзина</label>
-          <input type="button" name="show" value="Показать">
+          <fieldset>
+            <legend>Сетка</legend>
+              <label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
+              <label><input type="radio" name="grid" value="fixed">Фиксированная</label>
+              <label><input type="radio" name="grid" value="elastic">Резиновая</label>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+              <label><input type="checkbox" name="slider" value="slider">Слайдер</label>
+              <label><input type="checkbox" name="advantage" value="advantage">Блок преимуществ</label>
+              <label><input type="checkbox" name="news" value="news">Новости</label>
+              <label><input type="checkbox" name="gallery" value="gallery">Галерея</label>
+              <label><input type="checkbox" name="cart" value="cart">Корзина</label>
+              <input type="button" name="show" value="Показать">
+          </fieldset>
         </form>
       </aside>
       <section>
@@ -44,24 +46,51 @@
         <ul>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон Sedona"></a>
-            <h3><a href="#">Sedona</a></h3>
-            <p>Информационный сайт для туристов</p>
-            <span><a href="#">9 900 руб.</a></span>
+            <div>
+              <h3><a href="#">Sedona</a></h3>
+              <p>Информационный сайт для туристов</p>
+              <a href="#">9 900 руб.</a>
+            </div>
           </li>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон Pink"></a>
+            <div>
+              <h3><a href="#">Pink</a></h3>
+              <p>Приложение для настроения</p>
+              <a href="#">10 900 руб.</a>
+            </div>
           </li>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон Borodinski"></a>
+            <div>
+              <h3><a href="#">Borodinski</a></h3>
+              <p>Знаменитый Барбершоп</p>
+              <a href="#">11 900 руб.</a>
+            </div>
           </li>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон Mishka"></a>
+            <div>
+              <h3><a href="#">Mishka</a></h3>
+              <p>Товары ручной работы</p>
+              <a href="#">12 900 руб.</a>
+            </div>
           </li>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон A плюс"></a>
+            <div>
+              <h3><a href="#">A+</a></h3>
+              <p>Портал онлайн обучения</p>
+              <a href="#">13 900 руб.</a>
+            </div>
           </li>
           <li>
             <a href="#"><img src="https://via.placeholder.com/360x575" width="360" height="575" alt="Шаблон Кваст"></a>
+            <div>
+              <h3><a href="#">Кваст</a></h3>
+              <p>Производство кваса</p>
+              <a href="#">14 900 руб.</a>
+            </div>
           </li>
         </ul>
         <!-- Здесь добавим пагинацию -->
@@ -74,7 +103,7 @@
         <li><a href="#" title="Студия в социальной сети Facebook">Facebook</a></li>
         <li><a href="#" title="Студия в социальной сети Instagram">Instagram</a></li>
       </ul>
-      <p class="text-large">Давайте дружить, это выгодно</p>
+      <p class="text-large">Давайте дружить, это выгодно!</p>
       <p class="text-small">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
   </body>
